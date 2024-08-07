@@ -133,6 +133,21 @@ https://api-cert.sagepayments.com/bankcard/v1/charges
 
 ```JSON
 {
+    "customerProfileRequest": {
+ 	    "address": "",
+ 	 	"address2": "",
+ 	 	"city": "",
+ 	 	"companyName": "",
+ 	 	"country": "",
+ 	 	"customerID": 0,
+ 	 	"email": "",
+ 	 	"firstName": "",
+ 	 	"lastName": "",
+ 	 	"middleName": "",
+ 	 	"postalCode": "",
+ 	 	"state": "",
+ 	 	"telephone": ""
+ 	},
     "transactionId": "",
     "retail": {
         "amounts": {
