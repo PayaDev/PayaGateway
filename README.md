@@ -48,7 +48,7 @@ That's a great question! Our team (sdksupport@nuvei.com) hosts a certification c
 ### Prerequisits for Certification
 There are two main items we require prior to certification.
 * Please use all positive and negative test conditions and payment methods listed within the [Bank Card Testing Procedures and Decline Codes](https://github.com/PayaDev/PayaGateway/blob/master/PayaCore/Paya-Exchange-Virtual-Desktop/Bank%20Card%20Testing%20Procedures%20and%20Decline%20Codes.md) doc here on GitHub.
-* If you're using your own custom payment form you'll increase your scope for PCI-DSS. You'll need to email us a copy of your PCI compliance certification from an [Approved Scanning Vendor (ASV)](https://listings.pcisecuritystandards.org/assessors_and_solutions/approved_scanning_vendors). This will need to be at least an SAQ D or higher.
+* If you're using your own custom payment form you'll increase your scope for PCI-DSS. You'll need to email us a copy of your PCI-DSS SAQ D compliance certificate or your Attestation of Compliance (AOC) for your PCI-SSF from an [Approved Scanning Vendor (ASV)](https://listings.pcisecuritystandards.org/assessors_and_solutions/approved_scanning_vendors). 
 
 Please let us know if you have any questions.
 
