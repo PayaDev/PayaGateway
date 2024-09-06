@@ -25,8 +25,8 @@ In order to authenticate an API request, there needs to be authentication data s
 
 The following documentation is available:
 
-+ [Account Updater](https://github.com/TKESuperDave/PayaGateway/blob/master/PayaCore/Direct-API/Account%20Updater.md)
-+ [ACH](https://github.com/TKESuperDave/PayaGateway/blob/master/PayaCore/Direct-API/ACH.md)
++ [Account Updater](https://github.com/PayaDev/PayaGateway/blob/master/PayaCore/Direct-API/Account%20Updater.md)
++ [ACH](https://github.com/PayaDev/PayaGateway/blob/master/PayaCore/Direct-API/ACH.md)
   + API Health
   + Charges
   + Credits
@@ -34,12 +34,12 @@ The following documentation is available:
   + Settlements and Batches
   + Settlements, Summary, and Batches
   + Tokens
-+ [Application](https://github.com/TKESuperDave/PayaGateway/blob/master/PayaCore/Direct-API/Application.md)
++ [Application](https://github.com/PayaDev/PayaGateway/blob/master/PayaCore/Direct-API/Application.md)
   + Applications
   + Templates
-+ [Application OAuth](https://github.com/TKESuperDave/PayaGateway/blob/master/PayaCore/Direct-API/Application%20OAuth.md)
++ [Application OAuth](https://github.com/PayaDev/PayaGateway/blob/master/PayaCore/Direct-API/Application%20OAuth.md)
   + Tokens
-+ [Bankcard](https://github.com/TKESuperDave/PayaGateway/blob/master/PayaCore/Direct-API/BankCard.md)
++ [Bankcard](https://github.com/PayaDev/PayaGateway/blob/master/PayaCore/Direct-API/BankCard.md)
    + API Health
   + Charges
   + Credits
@@ -47,4 +47,4 @@ The following documentation is available:
   + Settlements and Batches
   + Settlements, Summary, and Batches
   + Tokens
-+ [Token](https://github.com/TKESuperDave/PayaGateway/blob/master/PayaCore/Direct-API/Token.md)
++ [Token](https://github.com/PayaDev/PayaGateway/blob/master/PayaCore/Direct-API/Token.md)

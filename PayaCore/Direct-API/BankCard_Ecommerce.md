@@ -1,9 +1,6 @@
-# Bankcard
+# Bankcard Ecommerce
 
-The Bankcard API is used to credit, debit, and other payment cards. This sandbox provides interactive samples for all available bankcard processing methods. This includes Card Not Present (CNP) which is Ecommerce/MOTO, Card Present (CP), and HealthCare. Please refer to our individual pages for specific requests for these business types.
-* [Bankcard Ecommerce](https://github.com/PayaDev/PayaGateway/blob/master/PayaCore/Direct-API/BankCard_Ecommerce.md)
-* [Bankcard Retail](https://github.com/PayaDev/PayaGateway/blob/master/PayaCore/Direct-API/BankCard_Retail.md)
-* [Bankcard HealthCare](https://github.com/PayaDev/PayaGateway/blob/master/PayaCore/Direct-API/BankCard_Healthcare.md)
+The Bankcard API is used to credit, debit, and other payment cards. This sandbox provides interactive samples for all available bankcard processing methods. Using the Ecommerce bankcard array indicates Card Not Present (CNP) and is typically used in Ecommerce and Mail Order Telephone Order (MOTO) transactions.
 
 ## API Health
 
@@ -137,79 +134,21 @@ https://api-cert.sagepayments.com/bankcard/v1/charges
 ```JSON
 {
     "customerProfileRequest": {
- 	    "address": "",
- 	 	"address2": "",
- 	 	"city": "",
- 	 	"companyName": "",
- 	 	"country": "",
- 	 	"customerID": 0,
- 	 	"email": "",
- 	 	"firstName": "",
- 	 	"lastName": "",
- 	 	"middleName": "",
- 	 	"postalCode": "",
- 	 	"state": "",
- 	 	"telephone": ""
+        "address": "",
+        "address2": "",
+        "city": "",
+        "companyName": "",
+        "country": "",
+        "customerID": 0,
+        "email": "",
+        "firstName": "",
+        "lastName": "",
+        "middleName": "",
+        "postalCode": "",
+        "state": "",
+        "telephone": ""
  	},
     "transactionId": "",
-    "retail": {
-        "amounts": {
-            "tip": 0,
-            "total": 0,
-            "tax": 0,
-            "shipping": 0
-        },
-        "authorizationCode": "",
-        "trackData": {
-            "value": "",
-            "format": "",
-            "isContactless": false
-        },
-        "deviceId": "",
-        "cardPresent": false,
-        "allowPartialAuthorization": false,
-        "debit": {
-            "cashback": 0,
-            "pin": ""
-        },
-        "orderNumber": "",
-        "cardData": {
-            "number": "",
-            "expiration": "",
-            "cvv": ""
-        },
-        "customer": {
-            "email": "",
-            "telephone": "",
-            "fax": ""
-        },
-        "billing": {
-            "name": "",
-            "address": "",
-            "city": "",
-            "state": "",
-            "postalCode": "",
-            "country": ""
-        },
-        "shipping": {
-            "name": "",
-            "address": "",
-            "city": "",
-            "state": "",
-            "postalCode": "",
-            "country": ""
-        },
-        "isRecurring": false,
-        "recurringSchedule": {
-            "amount": 0,
-            "frequency": "",
-            "interval": 0,
-            "nonBusinessDaysHandling": "",
-            "startDate": "",
-            "totalCount": 0,
-            "groupId": ""
-        }
-    },
     "eCommerce": {
         "authorizationCode": "",
         "amounts": {
@@ -273,69 +212,6 @@ https://api-cert.sagepayments.com/bankcard/v1/charges
             "groupId": ""
         }
     },
-    "healthCare": {
-        "amounts": {
-            "healthCare": 0,
-            "prescription": 0,
-            "clinic": 0,
-            "dental": 0,
-            "vision": 0,
-            "total": 0,
-            "tax": 0,
-            "shipping": 0
-        },
-        "iiasVerification": "",
-        "debit": {
-            "cashback": 0,
-            "pin": ""
-        },
-        "authorizationCode": "",
-        "trackData": {
-            "value": "",
-            "format": "",
-            "isContactless": false
-        },
-        "deviceId": "",
-        "cardPresent": false,
-        "allowPartialAuthorization": false,
-        "orderNumber": "",
-        "cardData": {
-            "number": "",
-            "expiration": "",
-            "cvv": ""
-        },
-        "customer": {
-            "email": "",
-            "telephone": "",
-            "fax": ""
-        },
-        "billing": {
-            "name": "",
-            "address": "",
-            "city": "",
-            "state": "",
-            "postalCode": "",
-            "country": ""
-        },
-        "shipping": {
-            "name": "",
-            "address": "",
-            "city": "",
-            "state": "",
-            "postalCode": "",
-            "country": ""
-        },
-        "isRecurring": false,
-        "recurringSchedule": {
-            "amount": 0,
-            "frequency": "",
-            "interval": 0,
-            "nonBusinessDaysHandling": "",
-            "startDate": "",
-            "totalCount": 0,
-            "groupId": ""
-        }
-    },
     "vault": {
         "token": "",
         "operation": ""
@@ -349,46 +225,6 @@ https://api-cert.sagepayments.com/bankcard/v1/charges
 | Name                                                   | Type    | Description                                                                                                                                                                                                      |
 |--------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | transactionId                                          | string  | A unique transaction identifier, this field is used for communication protocol purposes. The value provided is echoed in the response. Pattern: ^[\w'\-\s\.,#\/]{0,}$                                            |
-| retail .amounts .tip                                   | number  | The amount specified for the tip                                                                                                                                                                                 |
-| retail .amounts .total                                 | number  | The total amount of the transaction                                                                                                                                                                              |
-| retail .amounts .tax                                   | number  | The amount coming from tax                                                                                                                                                                                       |
-| retail .amounts .shipping                              | number  | The amount coming from shipping charges                                                                                                                                                                          |
-| retail .authorizationCode                              | string  | The 6 character authorization code for use with Force transaction code.                                                                                                                                          |
-| retail .trackData .value                               | string  | The value obtained from the swipe                                                                                                                                                                                |
-| retail .trackData .format                              | string  | The data format                                                                                                                                                                                                  |
-| retail .trackData .isContactless                       | boolean |                                                                                                                                                                                                                  |
-| retail .deviceId                                       | string  | A unique ID defined by the client to identify a particular device, terminal, or user of the client software. Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                      |
-| retail .cardPresent                                    | boolean | Used with manually keyed transactions to indicate whether the card was present but not swiped                                                                                                                    |
-| retail .allowPartialAuthorization                      | boolean | Used to indicate whether the POS supports Partial Authorization                                                                                                                                                  |
-| retail .debit .cashback                                | number  |                                                                                                                                                                                                                  |
-| retail .debit .pin                                     | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .orderNumber                                    | string  | The merchant-defined order number. Pattern: ^([\.\,\:\;\|\=\+\^\-\'\$\w\s\#\!\$\?\%\&\/\\]){0,}$                                                                                                                 |
-| retail .cardData .number                               | string  | The bankcard account number Pattern: ^[\w\-\s\/\+\=]{1,}$                                                                                                                                                        |
-| retail .cardData .expiration                           | string  | The card's expiration date                                                                                                                                                                                       |
-| retail .cardData .cvv                                  | string  | The card's CVV code                                                                                                                                                                                              |
-| retail .customer .email                                | string  | The customer's email address                                                                                                                                                                                     |
-| retail .customer .telephone                            | string  | The customer's telephone number Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                   |
-| retail .customer .fax                                  | string  | The customer's fax number Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                         |
-| retail .billing .name                                  | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .billing .address                               | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .billing .city                                  | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .billing .state                                 | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .billing .postalCode                            | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .billing .country                               | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .shipping .name                                 | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .shipping .address                              | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .shipping .city                                 | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .shipping .state                                | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .shipping .postalCode                           | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .shipping .country                              | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .isRecurring                                    | boolean | Indicates this transaction is part of a recurring series. NOTE: This does not create nor update a recurring billing entry                                                                                        |
-| retail .recurringSchedule .amount                      | number  | Recurring amount                                                                                                                                                                                                 |
-| retail .recurringSchedule .frequency                   | string  | The frequency at which the transaction should be processed                                                                                                                                                       |
-| retail .recurringSchedule .interval                    | integer | Recurring interval                                                                                                                                                                                               |
-| retail .recurringSchedule .nonBusinessDaysHandling     | string  | Specifies how the transaction should be processed if the processing date occurrs on a weekend or holiday                                                                                                         |
-| retail .recurringSchedule .startDate                   | string  | The date the recurring transactions should start                                                                                                                                                                 |
-| retail .recurringSchedule .totalCount                  | integer | The total number of times the transaction should take place. If null, it will occur indefinitely                                                                                                                 |
-| retail .recurringSchedule .groupId                     | string  | Recurring Group ID under which the recurring transaction will be added Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                            |
 | eCommerce .authorizationCode                           | string  | The 6 character authorization code for use with Force transaction code. Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                           |
 | eCommerce .amounts .total                              | number  | The total amount of the transaction                                                                                                                                                                              |
 | eCommerce .amounts .tax                                | number  | The amount coming from tax                                                                                                                                                                                       |
@@ -430,51 +266,6 @@ https://api-cert.sagepayments.com/bankcard/v1/charges
 | eCommerce .recurringSchedule .startDate                | string  | The date the recurring transactions should start                                                                                                                                                                 |
 | eCommerce .recurringSchedule .totalCount               | integer | The total number of times the transaction should take place. If null, it will occur indefinitely                                                                                                                 |
 | eCommerce .recurringSchedule .groupId                  | string  | Recurring Group ID under which the recurring transaction will be added Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                            |
-| healthCare .amounts .healthCare                        | number  |                                                                                                                                                                                                                  |
-| healthCare .amounts .prescription                      | number  |                                                                                                                                                                                                                  |
-| healthCare .amounts .clinic                            | number  |                                                                                                                                                                                                                  |
-| healthCare .amounts .dental                            | number  |                                                                                                                                                                                                                  |
-| healthCare .amounts .vision                            | number  |                                                                                                                                                                                                                  |
-| healthCare .amounts .total                             | number  | The total amount of the transaction                                                                                                                                                                              |
-| healthCare .amounts .tax                               | number  | The amount coming from tax                                                                                                                                                                                       |
-| healthCare .amounts .shipping                          | number  | The amount coming from shipping charges                                                                                                                                                                          |
-| healthCare .iiasVerification                           | string  | Identifies if the purchase items were verified against an Inventory Information Approval System (IIAS). Values can be 'NotVerified', 'Verified' or 'Exempt'                                                      |
-| healthCare .debit .cashback                            | number  |                                                                                                                                                                                                                  |
-| healthCare .debit .pin                                 | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .authorizationCode                          | string  | The 6 character authorization code for use with Force transaction code.                                                                                                                                          |
-| healthCare .trackData .value                           | string  | The value obtained from the swipe                                                                                                                                                                                |
-| healthCare .trackData .format                          | string  | The data format                                                                                                                                                                                                  |
-| healthCare .trackData .isContactless                   | boolean |                                                                                                                                                                                                                  |
-| healthCare .deviceId                                   | string  | A unique ID defined by the client to identify a particular device, terminal, or user of the client software. Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                      |
-| healthCare .cardPresent                                | boolean | Used with manually keyed transactions to indicate whether the card was present but not swiped                                                                                                                    |
-| healthCare .allowPartialAuthorization                  | boolean | Used to indicate whether the POS supports Partial Authorization                                                                                                                                                  |
-| healthCare .orderNumber                                | string  | The merchant-defined order number. Pattern: ^([\.\,\:\;\|\=\+\^\-\'\$\w\s\#\!\$\?\%\&\/\\]){0,}$                                                                                                                 |
-| healthCare .cardData .number                           | string  | The bankcard account number Pattern: ^[\w\-\s\/\+\=]{1,}$                                                                                                                                                        |
-| healthCare .cardData .expiration                       | string  | The card's expiration date                                                                                                                                                                                       |
-| healthCare .cardData .cvv                              | string  | The card's CVV code                                                                                                                                                                                              |
-| healthCare .customer .email                            | string  | The customer's email address                                                                                                                                                                                     |
-| healthCare .customer .telephone                        | string  | The customer's telephone number Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                   |
-| healthCare .customer .fax                              | string  | The customer's fax number Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                         |
-| healthCare .billing .name                              | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .billing .address                           | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .billing .city                              | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .billing .state                             | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .billing .postalCode                        | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .billing .country                           | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .shipping .name                             | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .shipping .address                          | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .shipping .city                             | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .shipping .state                            | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .shipping .postalCode                       | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .shipping .country                          | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .isRecurring                                | boolean | Indicates this transaction is part of a recurring series. NOTE: This does not create nor update a recurring billing entry                                                                                        |
-| healthCare .recurringSchedule .amount                  | number  | Recurring amount                                                                                                                                                                                                 |
-| healthCare .recurringSchedule .frequency               | string  | The frequency at which the transaction should be processed                                                                                                                                                       |
-| healthCare .recurringSchedule .interval                | integer | Recurring interval                                                                                                                                                                                               |
-| healthCare .recurringSchedule .nonBusinessDaysHandling | string  | Specifies how the transaction should be processed if the processing date occurrs on a weekend or holiday                                                                                                         |
-| healthCare .recurringSchedule .startDate               | string  | The date the recurring transactions should start                                                                                                                                                                 |
-| healthCare .recurringSchedule .totalCount              | integer | The total number of times the transaction should take place. If null, it will occur indefinitely                                                                                                                 |
-| healthCare .recurringSchedule .groupId                 | string  | Recurring Group ID under which the recurring transaction will be added Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                            |
 | vault .token                                           | string  | The Vault record token to use during a Read or Update operation Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                   |
 | vault .operation                                       | string  | The type of operation being requested. Values can be 'Read', 'Update' or 'Create'                                                                                                                                |
 | terminalNumber                                         | string  | The Gateway terminal configuration number. If it is not present, the default Gateway terminal configuration will be used.                                                                                        |
@@ -801,64 +592,6 @@ https://api-cert.sagepayments.com/bankcard/v1/credits
 ```JSON
 {
     "transactionId": "",
-    "retail": {
-        "amounts": {
-            "tip": 0,
-            "total": 0,
-            "tax": 0,
-            "shipping": 0
-        },
-        "authorizationCode": "",
-        "trackData": {
-            "value": "",
-            "format": "",
-            "isContactless": false
-        },
-        "deviceId": "",
-        "cardPresent": false,
-        "allowPartialAuthorization": false,
-        "debit": {
-            "cashback": 0,
-            "pin": ""
-        },
-        "orderNumber": "",
-        "cardData": {
-            "number": "",
-            "expiration": "",
-            "cvv": ""
-        },
-        "customer": {
-            "email": "",
-            "telephone": "",
-            "fax": ""
-        },
-        "billing": {
-            "name": "",
-            "address": "",
-            "city": "",
-            "state": "",
-            "postalCode": "",
-            "country": ""
-        },
-        "shipping": {
-            "name": "",
-            "address": "",
-            "city": "",
-            "state": "",
-            "postalCode": "",
-            "country": ""
-        },
-        "isRecurring": false,
-        "recurringSchedule": {
-            "amount": 0,
-            "frequency": "",
-            "interval": 0,
-            "nonBusinessDaysHandling": "",
-            "startDate": "",
-            "totalCount": 0,
-            "groupId": ""
-        }
-    },
     "eCommerce": {
         "authorizationCode": "",
         "amounts": {
@@ -922,69 +655,6 @@ https://api-cert.sagepayments.com/bankcard/v1/credits
             "groupId": ""
         }
     },
-    "healthCare": {
-        "amounts": {
-            "healthCare": 0,
-            "prescription": 0,
-            "clinic": 0,
-            "dental": 0,
-            "vision": 0,
-            "total": 0,
-            "tax": 0,
-            "shipping": 0
-        },
-        "iiasVerification": "",
-        "debit": {
-            "cashback": 0,
-            "pin": ""
-        },
-        "authorizationCode": "",
-        "trackData": {
-            "value": "",
-            "format": "",
-            "isContactless": false
-        },
-        "deviceId": "",
-        "cardPresent": false,
-        "allowPartialAuthorization": false,
-        "orderNumber": "",
-        "cardData": {
-            "number": "",
-            "expiration": "",
-            "cvv": ""
-        },
-        "customer": {
-            "email": "",
-            "telephone": "",
-            "fax": ""
-        },
-        "billing": {
-            "name": "",
-            "address": "",
-            "city": "",
-            "state": "",
-            "postalCode": "",
-            "country": ""
-        },
-        "shipping": {
-            "name": "",
-            "address": "",
-            "city": "",
-            "state": "",
-            "postalCode": "",
-            "country": ""
-        },
-        "isRecurring": false,
-        "recurringSchedule": {
-            "amount": 0,
-            "frequency": "",
-            "interval": 0,
-            "nonBusinessDaysHandling": "",
-            "startDate": "",
-            "totalCount": 0,
-            "groupId": ""
-        }
-    },
     "vault": {
         "token": "",
         "operation": ""
@@ -998,46 +668,6 @@ https://api-cert.sagepayments.com/bankcard/v1/credits
 | Name                                                   | Type    | Description                                                                                                                                                                                                      |
 |--------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | transactionId                                          | string  | A unique transaction identifier, this field is used for communication protocol purposes. The value provided is echoed in the response. Pattern: ^[\w'\-\s\.,#\/]{0,}$                                            |
-| retail .amounts .tip                                   | number  | The amount specified for the tip                                                                                                                                                                                 |
-| retail .amounts .total                                 | number  | The total amount of the transaction                                                                                                                                                                              |
-| retail .amounts .tax                                   | number  | The amount coming from tax                                                                                                                                                                                       |
-| retail .amounts .shipping                              | number  | The amount coming from shipping charges                                                                                                                                                                          |
-| retail .authorizationCode                              | string  | The 6 character authorization code for use with Force transaction code.                                                                                                                                          |
-| retail .trackData .value                               | string  | The value obtained from the swipe                                                                                                                                                                                |
-| retail .trackData .format                              | string  | The data format                                                                                                                                                                                                  |
-| retail .trackData .isContactless                       | boolean |                                                                                                                                                                                                                  |
-| retail .deviceId                                       | string  | A unique ID defined by the client to identify a particular device, terminal, or user of the client software. Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                      |
-| retail .cardPresent                                    | boolean | Used with manually keyed transactions to indicate whether the card was present but not swiped                                                                                                                    |
-| retail .allowPartialAuthorization                      | boolean | Used to indicate whether the POS supports Partial Authorization                                                                                                                                                  |
-| retail .debit .cashback                                | number  |                                                                                                                                                                                                                  |
-| retail .debit .pin                                     | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .orderNumber                                    | string  | The merchant-defined order number. Pattern: ^([\.\,\:\;\|\=\+\^\-\'\$\w\s\#\!\$\?\%\&\/\\]){0,}$                                                                                                                 |
-| retail .cardData .number                               | string  | The bankcard account number Pattern: ^[\w\-\s\/\+\=]{1,}$                                                                                                                                                        |
-| retail .cardData .expiration                           | string  | The card's expiration date                                                                                                                                                                                       |
-| retail .cardData .cvv                                  | string  | The card's CVV code                                                                                                                                                                                              |
-| retail .customer .email                                | string  | The customer's email address                                                                                                                                                                                     |
-| retail .customer .telephone                            | string  | The customer's telephone number Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                   |
-| retail .customer .fax                                  | string  | The customer's fax number Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                         |
-| retail .billing .name                                  | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .billing .address                               | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .billing .city                                  | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .billing .state                                 | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .billing .postalCode                            | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .billing .country                               | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .shipping .name                                 | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .shipping .address                              | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .shipping .city                                 | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .shipping .state                                | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .shipping .postalCode                           | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .shipping .country                              | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| retail .isRecurring                                    | boolean | Indicates this transaction is part of a recurring series. NOTE: This does not create nor update a recurring billing entry                                                                                        |
-| retail .recurringSchedule .amount                      | number  | Recurring amount                                                                                                                                                                                                 |
-| retail .recurringSchedule .frequency                   | string  | The frequency at which the transaction should be processed                                                                                                                                                       |
-| retail .recurringSchedule .interval                    | integer | Recurring interval                                                                                                                                                                                               |
-| retail .recurringSchedule .nonBusinessDaysHandling     | string  | Specifies how the transaction should be processed if the processing date occurrs on a weekend or holiday                                                                                                         |
-| retail .recurringSchedule .startDate                   | string  | The date the recurring transactions should start                                                                                                                                                                 |
-| retail .recurringSchedule .totalCount                  | integer | The total number of times the transaction should take place. If null, it will occur indefinitely                                                                                                                 |
-| retail .recurringSchedule .groupId                     | string  | Recurring Group ID under which the recurring transaction will be added Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                            |
 | eCommerce .authorizationCode                           | string  | The 6 character authorization code for use with Force transaction code. Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                           |
 | eCommerce .amounts .total                              | number  | The total amount of the transaction                                                                                                                                                                              |
 | eCommerce .amounts .tax                                | number  | The amount coming from tax                                                                                                                                                                                       |
@@ -1079,51 +709,6 @@ https://api-cert.sagepayments.com/bankcard/v1/credits
 | eCommerce .recurringSchedule .startDate                | string  | The date the recurring transactions should start                                                                                                                                                                 |
 | eCommerce .recurringSchedule .totalCount               | integer | The total number of times the transaction should take place. If null, it will occur indefinitely                                                                                                                 |
 | eCommerce .recurringSchedule .groupId                  | string  | Recurring Group ID under which the recurring transaction will be added Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                            |
-| healthCare .amounts .healthCare                        | number  |                                                                                                                                                                                                                  |
-| healthCare .amounts .prescription                      | number  |                                                                                                                                                                                                                  |
-| healthCare .amounts .clinic                            | number  |                                                                                                                                                                                                                  |
-| healthCare .amounts .dental                            | number  |                                                                                                                                                                                                                  |
-| healthCare .amounts .vision                            | number  |                                                                                                                                                                                                                  |
-| healthCare .amounts .total                             | number  | The total amount of the transaction                                                                                                                                                                              |
-| healthCare .amounts .tax                               | number  | The amount coming from tax                                                                                                                                                                                       |
-| healthCare .amounts .shipping                          | number  | The amount coming from shipping charges                                                                                                                                                                          |
-| healthCare .iiasVerification                           | string  | Identifies if the purchase items were verified against an Inventory Information Approval System (IIAS). Values can be 'NotVerified', 'Verified' or 'Exempt'                                                      |
-| healthCare .debit .cashback                            | number  |                                                                                                                                                                                                                  |
-| healthCare .debit .pin                                 | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .authorizationCode                          | string  | The 6 character authorization code for use with Force transaction code.                                                                                                                                          |
-| healthCare .trackData .value                           | string  | The value obtained from the swipe                                                                                                                                                                                |
-| healthCare .trackData .format                          | string  | The data format                                                                                                                                                                                                  |
-| healthCare .trackData .isContactless                   | boolean |                                                                                                                                                                                                                  |
-| healthCare .deviceId                                   | string  | A unique ID defined by the client to identify a particular device, terminal, or user of the client software. Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                      |
-| healthCare .cardPresent                                | boolean | Used with manually keyed transactions to indicate whether the card was present but not swiped                                                                                                                    |
-| healthCare .allowPartialAuthorization                  | boolean | Used to indicate whether the POS supports Partial Authorization                                                                                                                                                  |
-| healthCare .orderNumber                                | string  | The merchant-defined order number. Pattern: ^([\.\,\:\;\|\=\+\^\-\'\$\w\s\#\!\$\?\%\&\/\\]){0,}$                                                                                                                 |
-| healthCare .cardData .number                           | string  | The bankcard account number Pattern: ^[\w\-\s\/\+\=]{1,}$                                                                                                                                                        |
-| healthCare .cardData .expiration                       | string  | The card's expiration date                                                                                                                                                                                       |
-| healthCare .cardData .cvv                              | string  | The card's CVV code                                                                                                                                                                                              |
-| healthCare .customer .email                            | string  | The customer's email address                                                                                                                                                                                     |
-| healthCare .customer .telephone                        | string  | The customer's telephone number Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                   |
-| healthCare .customer .fax                              | string  | The customer's fax number Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                         |
-| healthCare .billing .name                              | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .billing .address                           | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .billing .city                              | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .billing .state                             | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .billing .postalCode                        | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .billing .country                           | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .shipping .name                             | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .shipping .address                          | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .shipping .city                             | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .shipping .state                            | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .shipping .postalCode                       | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .shipping .country                          | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
-| healthCare .isRecurring                                | boolean | Indicates this transaction is part of a recurring series. NOTE: This does not create nor update a recurring billing entry                                                                                        |
-| healthCare .recurringSchedule .amount                  | number  | Recurring amount                                                                                                                                                                                                 |
-| healthCare .recurringSchedule .frequency               | string  | The frequency at which the transaction should be processed                                                                                                                                                       |
-| healthCare .recurringSchedule .interval                | integer | Recurring interval                                                                                                                                                                                               |
-| healthCare .recurringSchedule .nonBusinessDaysHandling | string  | Specifies how the transaction should be processed if the processing date occurrs on a weekend or holiday                                                                                                         |
-| healthCare .recurringSchedule .startDate               | string  | The date the recurring transactions should start                                                                                                                                                                 |
-| healthCare .recurringSchedule .totalCount              | integer | The total number of times the transaction should take place. If null, it will occur indefinitely                                                                                                                 |
-| healthCare .recurringSchedule .groupId                 | string  | Recurring Group ID under which the recurring transaction will be added Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                            |
 | vault .token                                           | string  | The Vault record token to use during a Read or Update operation Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                   |
 | vault .operation                                       | string  | The type of operation being requested. Values can be 'Read', 'Update' or 'Create'                                                                                                                                |
 | terminalNumber                                         | string  | The Gateway terminal configuration number. If it is not present, the default Gateway terminal configuration will be used.                                                                                        |
@@ -1453,8 +1038,8 @@ https://api-cert.sagepayments.com/bankcard/v1/batches
 
 #### Query Parameters
 
-| Name           | Values                                                         | Description                                                                                                                                                 |
-|----------------|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name          | Values               | Description                                                                                |
+|---------------|----------------------|--------------------------------------------------------------------------------------------|
 | startDate     |                                                                                                                    | Returns records on or after this date                                                      |
 | endDate       |                                                                                                                    | Returns records on or before this date                                                     |
 | pageSize      |                                                                                                                    | The number of items to be included in each page of the result set                          |
