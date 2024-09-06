@@ -137,19 +137,19 @@ https://api-cert.sagepayments.com/bankcard/v1/charges
 ```JSON
 {
     "customerProfileRequest": {
- 	    "address": "",
- 	 	"address2": "",
- 	 	"city": "",
- 	 	"companyName": "",
- 	 	"country": "",
- 	 	"customerID": 0,
- 	 	"email": "",
- 	 	"firstName": "",
- 	 	"lastName": "",
- 	 	"middleName": "",
- 	 	"postalCode": "",
- 	 	"state": "",
- 	 	"telephone": ""
+        "address": "",
+        "address2": "",
+        "city": "",
+        "companyName": "",
+        "country": "",
+        "customerID": 0,
+        "email": "",
+        "firstName": "",
+        "lastName": "",
+        "middleName": "",
+        "postalCode": "",
+        "state": "",
+        "telephone": ""
  	},
     "transactionId": "",
     "retail": {
@@ -348,6 +348,19 @@ https://api-cert.sagepayments.com/bankcard/v1/charges
 
 | Name                                                   | Type    | Description                                                                                                                                                                                                      |
 |--------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| customerProfileRequest .address                            | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
+| customerProfileRequest .address2                            | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
+| customerProfileRequest .city                            | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
+| customerProfileRequest .companyName                            | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
+| customerProfileRequest .country                            | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
+| customerProfileRequest .customerID                            | number  | Value provided by Paya when a new Customer Profile is created. If you are creating a new profile, submit a value of 0. If the email already exists, the API will return the existing profile number. If you submit an existing customerID, the API will update their Customer Profile with the additional profile details included in the request.                                                                                                                                                                                   |
+| customerProfileRequest .email                            | string  | The customer's email address                                                                                                                                                                                   |
+| customerProfileRequest .firstName                            | string  | The customer's first name. Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
+| customerProfileRequest .lastName                            | string  | The customer's last name. Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
+| customerProfileRequest .middleName                            | string  | The customer's middle name. Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
+| customerProfileRequest .postalCode                            | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
+| customerProfileRequest .state                            | string  | Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
+| customerProfileRequest .telephone                            | string  | The customer's telephone number Pattern: ^[\w'\-\s\.,#\/]{0,}$                                                                                                                                                                                   |
 | transactionId                                          | string  | A unique transaction identifier, this field is used for communication protocol purposes. The value provided is echoed in the response. Pattern: ^[\w'\-\s\.,#\/]{0,}$                                            |
 | retail .amounts .tip                                   | number  | The amount specified for the tip                                                                                                                                                                                 |
 | retail .amounts .total                                 | number  | The total amount of the transaction                                                                                                                                                                              |
