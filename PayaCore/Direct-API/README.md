@@ -39,8 +39,8 @@ The following documentation is available:
   + Templates
 + [Application OAuth](https://github.com/PayaDev/PayaGateway/blob/master/PayaCore/Direct-API/Application%20OAuth.md)
   + Tokens
-+ [Bankcard](https://github.com/PayaDev/PayaGateway/blob/master/PayaCore/Direct-API/BankCard.md)
-   + API Health
++ [Bankcard](https://github.com/PayaDev/PayaGateway/blob/master/PayaCore/Direct-API/BankCard.md) | [Bankcard Ecommerce](https://github.com/PayaDev/PayaGateway/blob/master/PayaCore/Direct-API/BankCard_Ecommerce.md) | [Bankcard Retail](https://github.com/PayaDev/PayaGateway/blob/master/PayaCore/Direct-API/BankCard_Retail.md) | [Bankcard HealthCare](https://github.com/PayaDev/PayaGateway/blob/master/PayaCore/Direct-API/BankCard_HealthCare.md)
+  + API Health
   + Charges
   + Credits
   + Reporting on Transactions
