@@ -20,7 +20,7 @@ Public Class Main
     '
     'Application Is intended for instructional use only.
     'If you have any questions, please feel free to email
-    'the Integration Support team at sdksupport@paya.com
+    'the Integration Support team at sdksupport@nuvei.com
     'Also, please make sure to register for API credentials
     'at our developer portal: https://developer.sagepayments.com
     '======================================================

@@ -14,7 +14,7 @@ namespace DirectAPI_Csharp_Sample
     //Sample Direct API request - C#.net
     //Thomas Hagan
     //Integration Consultant Sr
-    //Paya, Inc.
+    //Paya, A Nuvei Company
     //Pubilished: November 22nd, 2016
     //Updated: October 3rd, 2018 - Removed references to "Sage" 
     //  other than existing sagepayments URLs. Also addressed TLS
@@ -22,7 +22,7 @@ namespace DirectAPI_Csharp_Sample
     //
     //Application is intended for instructional use only.
     //If you have any questions, please feel free to email
-    //the Integration Support team at sdksupport@paya.com
+    //the Integration Support team at sdksupport@nuvei.com
     //Also, please make sure to register for API credentials
     //at our developer portal: https://developer.sagepayments.com
     //======================================================

@@ -1,8 +1,8 @@
 // Sample donated by Andrew McRobb
-// Company: Paya, Inc.
+// Company: Paya, A Nuvei Company
 // Sample for educational use only - not intended for production.
 // If you have any questions regarding the sample or the Direct API please contact
-// us at sdksupport@paya.com
+// us at sdksupport@nuvei.com
 
 package main
 
