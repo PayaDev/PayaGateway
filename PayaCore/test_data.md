@@ -67,8 +67,28 @@ For developers who want to generate specific response codes, AVS responses, and 
 
 | Code   | Error                   | Description                                                                                                                                                                                       |
 |--------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 000000 | INTERNAL SERVER   ERROR | Server   Error, Please contact Paya for assistance or more      information                                                                                                                       |
+| 000000 | INTERNAL SERVER ERROR | Server Error, Please contact Paya for assistance or more information                                                                                                                       |
+| 100000 | SERVICE IS CURRENTLY NOT AVAIALABLE | Server Error, Please contact Paya for assistance or more information                                                                                                                       |
+| 100001 | ONE OR MORE REQUIRED HEADERS ARE MISSING |                                                                                                                        |
+| 100002 | ONE OR MORE QUERY PARAMETERS ARE MISSING |                                                                                                                        |
+| 100003 | INVALID HMAC |                                                                                                                        |
+| 100004 | RATE LIMIT EXCEEDED |                                                                                                                        |
+| 100005 | MISSING OR INVALID APPLICATION IDENTIFIER |                                                                                                                        |
+| 100006 | RESOURCE NOT FOUND |                                                                                                                        |
+| 100007 | INVALID MESSAGE REQUEST FORMAT |                                                                                                                        |
+| 100008 | INVALID MESSAGE REQUEST CONTENT |                                                                                                                        |
+| 100009 | REQUEST PARAMETER THREAT DETECTED |                                                                                                                        |
+| 100010 | REQUEST CONTENT THREAT DETECTED |                                                                                                                        |
+| 100011 | INTERNAL SCRIPT EXECUTION ERROR | Server Error, Please contact Paya for assistance or more information                                                                                                                       |
+| 100012 | SERVICE CALLOUT POLICY EXECUTION ERROR | Server Error, Please contact Paya for assistance or more information                                                                                                                       |
+| 400000 | THERE WAS A PROBLEM WITH THE REQUEST. PLEASE SEE 'DETAIL' FOR MORE |                                                                                                                        |
+| 650102 | AVS FAILURE – N         | The   AVS result was a no match and the transaction was Voided                                                                                                                                    |
+| 650103 | AVS FAILURE – YX        | The AVS result was not an exact match   and the      transaction was Voided                                                                                                                       |
+| 650103 | AVS FAILURE –   AYXWZ   | The   ASV result was not a partial match and the      transaction was Voided                                                                                                                      |
+| 650104 | CVV FAILURE – M         | The CVV result was not a exact match and   the transaction was Voided                                                                                                                             |
+| 650104 | CVV FAILURE – N         | The   CVV result was a no match and the transaction was Voided                                                                                                                                    |
 | 711711 | ERROR REVIEW REPORTING  | Please log into the Virtual Terminal to review your transaction history to determine the status of this transaction.  If you need assistance, please contact Technical Support at 877-470-4001 |
+| 800000 | THERE WAS A PROBLEM WITH THE REQUEST. PLEASE SEE 'DETAIL' FOR MORE    |                                                                                                                                                       |
 | 900000 | INVALID   T_ORDERNUM    | Order   number value is in an invalid format                                                                                                                                                      |
 | 900001 | INVALID C_NAME          | Name value is in an invalid format or   was left blank                                                                                                                                            |
 | 900002 | INVALID   C_ADDRESS     | Address   value is in an invalid format or was left blank                                                                                                                                         |
@@ -93,8 +113,4 @@ For developers who want to generate specific response codes, AVS responses, and 
 | 900021 | INVALID_T_AUTH          | Authorization code is in an invalid   format or was left blank (required for Force Transaction)                                                                                                   |
 | 900022 | INVALID_T_REFERENCE     | Reference   value is in an invalid format or was left blank (Required for Force or Void   by Reference)                                                                                           |
 | 901000 | GATEWAY ERROR CODE      | General validation error. The error   message will contain additional information.                                                                                                                |
-| 650102 | AVS FAILURE – N         | The   AVS result was a no match and the transaction was Voided                                                                                                                                    |
-| 650103 | AVS FAILURE – YX        | The AVS result was not an exact match   and the      transaction was Voided                                                                                                                       |
-| 650103 | AVS FAILURE –   AYXWZ   | The   ASV result was not a partial match and the      transaction was Voided                                                                                                                      |
-| 650104 | CVV FAILURE – M         | The CVV result was not a exact match and   the transaction was Voided                                                                                                                             |
-| 650104 | CVV FAILURE – N         | The   CVV result was a no match and the transaction was Voided                                                                                                                                    |
+
