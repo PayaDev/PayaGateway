@@ -34,7 +34,7 @@ The following represents implementations of the PEVD (Paya Exchange Virtual Desk
 This type of integration is used when cardholder data needs to be collected/captured in a secure browser enviornment over SSL.
 
 ### URL
-https://www.sageexchange.com/VirtualPaymentTerminal/frmPayment.aspx 
+https://www.sageexchange.com/sevd/frmPayment.aspx 
 
 ### Form Fields
 |     Field   Name             |     Required       |     Definition                                                                                                                                                                             |
@@ -51,7 +51,7 @@ https://www.sageexchange.com/VirtualPaymentTerminal/frmPayment.aspx
         <title>VPT Sample</title> 
     </head> 
     <body> 
- 	    <form action="https://www.sageexchange.com/VirtualPaymentTerminal/frmPayment.aspx" method="POST" target="_blank"> 
+ 	    <form action="https://www.sageexchange.com/sevd/frmPayment.aspx" method="POST" target="_blank"> 
  	 	    <input type="hidden" name="request" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt; 
                 &lt;Request_v1 xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt; 
                     &lt;Application&gt; 
@@ -154,7 +154,7 @@ This type of integration is used no cardholder or additional processing data nee
 
 ### URL
 
-https://www.sageexchange.com/VirtualPaymentTerminal/frmPayment.aspx
+https://www.sageexchange.com/sevd/frmPayment.aspx
 
 ### Form Fields
 
@@ -266,7 +266,7 @@ dim statusCode dim xmlResp dim formData
  	 
 formData = "request=" & Server.UrlEncode( xmlReq )  
 Set msxml = Server.CreateObject( "MSXML2.ServerXMLHTTP" ) 
-msxml.Open "POST", "https://www.sageexchange.com/VirtualPaymentTerminal/frmPayment.aspx", False msxml.setRequestHeader "Content-Type", "application/x-www-form-urlencoded" msxml.send( formData ) 
+msxml.Open "POST", "https://www.sageexchange.com/sevd/frmPayment.aspx", False msxml.setRequestHeader "Content-Type", "application/x-www-form-urlencoded" msxml.send( formData ) 
  
 statusCode = msxml.Status if statusCode <> 200 then 
     ' handler error 
@@ -367,7 +367,7 @@ dim formData
 formData = "request=" & Server.UrlEncode( xmlReq ) 
 
 Set msxml = Server.CreateObject( "MSXML2.ServerXMLHTTP" ) 
-msxml.Open "POST", "https://www.sageexchange.com/VirtualPaymentTerminal/frmPayment.aspx", False 
+msxml.Open "POST", "https://www.sageexchange.com/sevd/frmPayment.aspx", False 
 msxml.setRequestHeader "Content-Type", "application/x-www-form-urlencoded" 
 msxml.send( formData ) 
  
@@ -414,7 +414,7 @@ dim formData
 formData = "request=" & Server.UrlEncode( xmlReq )
 
 Set msxml = Server.CreateObject( "MSXML2.ServerXMLHTTP" ) 
-msxml.Open "POST", "https://www.sageexchange.com/VirtualPaymentTerminal/frmPayment.aspx", False 
+msxml.Open "POST", "https://www.sageexchange.com/sevd/frmPayment.aspx", False 
 msxml.setRequestHeader "Content-Type", "application/x-www-form-urlencoded" 
 msxml.send( formData ) 
  
