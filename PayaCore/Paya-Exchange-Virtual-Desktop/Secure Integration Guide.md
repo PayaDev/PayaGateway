@@ -39,7 +39,7 @@ Use this method to encrypt your PEVD XML message and to receive a PEVD envelope 
 
 Use the following link to access Paya Exchange Virtual Desktop:
 
-https://www.sageexchange.com/virtualpaymentterminal/frmenvelope.aspx 
+https://www.sageexchange.com/sevd/frmenvelope.aspx 
 
 ### Supported HTTP VERBS
 
@@ -164,7 +164,7 @@ S3ZMBJS2MLz/dPkamS62HBhuJPiarMAs+OYeCt2tHAsDuU2yFA8av/cFxCbsblXbxje9u3Vw==</Data
 <html> <head> 
 </head> 
 <body> 
-<form action=”https://www.sageexchange.com/virtualpaymentterminal/frmpayment.aspx” method=”POST”> 
+<form action=”https://www.sageexchange.com/sevd/frmpayment.aspx” method=”POST”> 
 <input type=”hidden” name=”request” value=”&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-
 8&quot;?&gt;&lt;Envelope xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; 
 xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;  &lt;Token&gt;e911c9ed-7c12-4a5c
@@ -284,7 +284,7 @@ iKIbC%2fUFvCHKJqr4ozAkYIxPOFYw%3d%3d%3c%2fData%3e%3c%2fEnvelope%3e
 Use this method to decrypt the PEVD XML response message.
 
 ### URL
-https://www.sageexchange.com/virtualpaymentterminal/frmopenenvelope.aspx 
+https://www.sageexchange.com/sevd/frmopenenvelope.aspx 
 
 ### Supported HTTP VERBS
 POST
