@@ -110,7 +110,7 @@ https://api-cert.sagepayments.com/ach/v1/charges
 | pageNumber     | integer | The current page of results being returned                                                                     |
 | href           | string  | The URL used to get this page of data                                                                          |
 | next           | string  | The URL used to get the next page of data. If null, the current page is the last page in the result set.       |
-| previous       | string  | The URL used to get the previous page of data. If null, the currrent page is the first page in the result set. |
+| previous       | string  | The URL used to get the previous page of data. If null, the current page is the first page in the result set. |
 | summary        | array   | A summary of sales, authorizations, and credits in the result set                                              |
 | items          | array   |                                                                                                   |
 
