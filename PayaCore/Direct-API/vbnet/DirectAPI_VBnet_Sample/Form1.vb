@@ -175,7 +175,7 @@ Public Class Main
     Private Sub btLoad_Click(sender As Object, e As EventArgs) Handles btLoad.Click
 
         'TH - Test Data. This is the test account infomation we provide
-        'in the API Sandbox. Please contact us at sdksupport@paya.com if
+        'in the API Sandbox. Please contact us at sdksupport@nuvei.com if
         'you need a unique test account and receive the Merchant ID and
         'Merchant Key. In order to get your own Client ID and Client Secret
         'you must register at https://developer.sagepayments.com and setup
