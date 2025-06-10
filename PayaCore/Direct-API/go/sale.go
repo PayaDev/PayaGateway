@@ -24,7 +24,7 @@ const (
 	// These are the Merchant Credentials, please feel free to use the prodvided
 	// Merchant ID and Merchant Key for testing. If you would like your own test 
 	// Merchant account with access to the Virtual Terminal, please request an account
-	// from sdksupport@paya.com
+	// from sdksupport@nuvei.com
 	PayaMerchantId  = "173859436515"
 	PayaMerchantKey = "P1J2V8P2Q3D8"
 
