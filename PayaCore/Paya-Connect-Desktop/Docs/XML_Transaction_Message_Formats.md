@@ -60,7 +60,7 @@ Sale is a transaction type in which the transaction is authorized and captured i
           <State>Texas</State>
           <ZipCode>78597</ZipCode>
           <Country>USA</Country>
-          <EmailAddress>jane.doe@paya.com</EmailAddress>
+          <EmailAddress>jane.doe@email.com</EmailAddress>
           <Telephone></Telephone>
           <Fax></Fax>
         </Address>
@@ -104,7 +104,7 @@ Sale is a transaction type in which the transaction is authorized and captured i
           <State>Texas</State>
           <ZipCode>78597</ZipCode>
           <Country>USA</Country>
-          <EmailAddress>john.doe@paya.com</EmailAddress>
+          <EmailAddress>john.doe@email.com</EmailAddress>
           <Telephone></Telephone>
           <Fax></Fax>
         </Address>
@@ -152,7 +152,7 @@ Sale is a transaction type in which the transaction is authorized and captured i
           <State>Texas</State>
           <ZipCode>78597</ZipCode>
           <Country>USA</Country>
-          <EmailAddress>john.doe@paya.com</EmailAddress>
+          <EmailAddress>john.doe@email.com</EmailAddress>
           <Telephone></Telephone>
           <Fax></Fax>
         </Address>
@@ -199,7 +199,7 @@ Authorization is a transaction type in which an account is verified to be valid 
           <State>Texas</State>
           <ZipCode>78597</ZipCode>
           <Country>USA</Country>
-          <EmailAddress>jane.doe@paya.com</EmailAddress>
+          <EmailAddress>jane.doe@email.com</EmailAddress>
           <Telephone></Telephone>
           <Fax></Fax>
         </Address>
@@ -242,7 +242,7 @@ Authorization is a transaction type in which an account is verified to be valid 
           <State>Texas</State>
           <ZipCode>78597</ZipCode>
           <Country>USA</Country>
-          <EmailAddress>john.doe@paya.com</EmailAddress>
+          <EmailAddress>john.doe@email.com</EmailAddress>
           <Telephone></Telephone>
           <Fax></Fax>
         </Address>
@@ -343,7 +343,7 @@ Force is a transaction type used to force a transaction into settlement in cases
           <State>Texas</State>
           <ZipCode>78597</ZipCode>
           <Country>USA</Country>
-          <EmailAddress>jane.doe@paya.com</EmailAddress>
+          <EmailAddress>jane.doe@email.com</EmailAddress>
           <Telephone></Telephone>
           <Fax></Fax>
         </Address>
@@ -387,7 +387,7 @@ Force is a transaction type used to force a transaction into settlement in cases
           <State>Texas</State>
           <ZipCode>78597</ZipCode>
           <Country>USA</Country>
-          <EmailAddress>john.doe@paya.com</EmailAddress>
+          <EmailAddress>john.doe@email.com</EmailAddress>
           <Telephone></Telephone>
           <Fax></Fax>
         </Address>
@@ -437,7 +437,7 @@ Level 2 data is additional transaction data required for Level II commercial car
           <State>Texas</State>
           <ZipCode>78597</ZipCode>
           <Country>USA</Country>
-          <EmailAddress>jane.doe@paya.com</EmailAddress>
+          <EmailAddress>jane.doe@email.com</EmailAddress>
           <Telephone></Telephone>
           <Fax></Fax>
         </Address>
@@ -835,7 +835,7 @@ Paya Connect Desktop supports processing multiple payments in a single XML reque
           <State>Texas</State>
           <ZipCode>78597</ZipCode>
           <Country>USA</Country>
-          <EmailAddress>jane.doe@paya.com</EmailAddress>
+          <EmailAddress>jane.doe@email.com</EmailAddress>
           <Telephone></Telephone>
           <Fax></Fax>
         </Address>
@@ -865,7 +865,7 @@ Paya Connect Desktop supports processing multiple payments in a single XML reque
           <State>Texas</State>
           <ZipCode>78597</ZipCode>
           <Country>USA</Country>
-          <EmailAddress>john.doe@paya.com</EmailAddress>
+          <EmailAddress>john.doe@email.com</EmailAddress>
           <Telephone></Telephone>
           <Fax></Fax>
         </Address>
@@ -1004,7 +1004,7 @@ It is possible to explicitly request the tender type to be used for a given tran
           <State>Texas</State>
           <ZipCode>78597</ZipCode>
           <Country>USA</Country>
-          <EmailAddress>jane.doe@paya.com</EmailAddress>
+          <EmailAddress>jane.doe@email.com</EmailAddress>
           <Telephone></Telephone>
           <Fax></Fax>
         </Address>
@@ -1049,7 +1049,7 @@ It is possible to explicitly request the tender type to be used for a given tran
           <State>Texas</State>
           <ZipCode>78597</ZipCode>
           <Country>USA</Country>
-          <EmailAddress>jane.doe@paya.com</EmailAddress>
+          <EmailAddress>jane.doe@email.com</EmailAddress>
           <Telephone></Telephone>
           <Fax></Fax>
         </Address>
@@ -1097,7 +1097,7 @@ Sage Exchange supports hardware terminals that can process debit (PIN Entry) and
           <State>Texas</State>
           <ZipCode>78597</ZipCode>
           <Country>USA</Country>
-          <EmailAddress>jane.doe@paya.com</EmailAddress>
+          <EmailAddress>jane.doe@email.com</EmailAddress>
           <Telephone></Telephone>
           <Fax></Fax>
         </Address>
@@ -1154,7 +1154,7 @@ Healthcare data is additional transaction data required for healthcare reporting
           <State>Texas</State>
           <ZipCode>78597</ZipCode>
           <Country>USA</Country>
-          <EmailAddress>jane.doe@paya.com</EmailAddress>
+          <EmailAddress>jane.doe@email.com</EmailAddress>
           <Telephone></Telephone>
           <Fax></Fax>
         </Address>
@@ -1217,7 +1217,7 @@ The EMV Sale transaction makes it possible to process sale transactions using ch
           <State>Texas</State>
           <ZipCode>78597</ZipCode>
           <Country>USA</Country>
-          <EmailAddress>jane.doe@paya.com</EmailAddress>
+          <EmailAddress>jane.doe@email.com</EmailAddress>
           <Telephone>703-555-1234</Telephone>
           <Fax></Fax>
         </Address>
