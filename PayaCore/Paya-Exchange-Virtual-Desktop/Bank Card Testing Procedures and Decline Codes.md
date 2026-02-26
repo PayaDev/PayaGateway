@@ -26,7 +26,7 @@ An account placed in test mode will respond to a specific group of MOD10- compli
 | Card       | Number           |
 |------------|------------------|
 | Visa       | 4128123412341231 |
-| MasterCard | 5499700000000065 |
+| MasterCard | 54997400000000065 |
 
 ### Healthcare FSA/HAS Testing Services
 
