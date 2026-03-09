@@ -22,8 +22,7 @@ Contact: sdksupport@nuvei.com
     $verb = "POST";
     $url = "https://api-cert.sagepayments.com/bankcard/v1/charges?type=Sale";
     $requestData = [
-        // this is a pretty minimalistic example...
-        // complete reference material is available on the dev portal.
+        // complete reference material is available on the dev portal: https://developer.sagepayments.com/apis
         "Ecommerce" => [
             "OrderNumber" => "Invoice " . rand(0, 1000),
             "Amounts" => [
@@ -31,7 +30,8 @@ Contact: sdksupport@nuvei.com
             ],
             "CardData" => [
                 "Number" => "5454545454545454",
-                "Expiration" => "1019"
+                "Expiration" => "1230",
+                "cvv" => "123"
             ],
             "customer" => [
                 "email" => "kur@foo.com",
@@ -45,7 +45,10 @@ Contact: sdksupport@nuvei.com
                 "state" => "VA",
                 "postalCode" => "12345",
                 "country" => "US"
-            ]
+            ],
+        ],
+        "vault" => [
+          "operation" => "Create"
         ]
     ];
     // convert to json for transport
