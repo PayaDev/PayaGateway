@@ -89,9 +89,81 @@ The &lt;Theme&gt;&lt;/Theme&gt; section of the code allows you to modify the tex
     
 ### Hiding or showing fields 
     
-The tags in the &lt;SinglePayment&gt;&lt;/SinglePayment&gt; section withing the UI code allow you to show or hide fields on the Payment page. For example, you can choose to hide fields such as Reference Number or Shipping in the Totals group box or extra address lines in the Billing Information section by setting the tag values to false. 
+The tags in the &lt;SinglePayment&gt;&lt;/SinglePayment&gt; section withing the UI code allow you to show or hide fields on the Payment page. For example, you can choose to hide fields such as Reference Number or Shipping in the Totals group box or extra address lines in the Billing Information section by setting the tag values to false. A useful item is the <Customer><Name> element. If you set the <LastName> to <Enabled>false and <Visible> false, the form will take the data from the <FirstName> field and fill in a combined "Name" field within the payment form. This is especially useful for businesses with only a single name.
 
+Example UI XML:
 
-![PEVD_HideShow](https://user-images.githubusercontent.com/6975101/183961922-3edb74cb-9a1b-4b33-8c02-65dea0d64590.jpg)
-
-<sub>**Image 2:** This section of code shows the &lt;SinglePayment&gt;&lt;/SinglePayment&gt; section.</sub>
+```XML
+<UI>
+    <Display>
+        <Header>true</Header>
+        <VaultLogo>false</VaultLogo>
+        <CardPayment>true</CardPayment>
+        <CheckPayment>true</CheckPayment>
+        <SELogo>true</SELogo>
+    </Display>
+    <Theme>
+        <MainFontColor>black</MainFontColor>
+        <MainBackColor>#95bec9</MainBackColor>
+        <HeaderBackColor>#cbeaf2</HeaderBackColor>
+        <TotalsBoxBackColor>#cbeaf2</TotalsBoxBackColor>
+        <DividerBackColor>#336B87</DividerBackColor>
+    </Theme>
+    <SinglePayment>
+        <Customer>
+            <Name>
+                <FirstName>
+                    <Enabled>true</Enabled>
+                    <Visible>true</Visible>
+                </FirstName>
+                <LastName>
+                    <Enabled>false</Enabled>
+                    <Visible>false</Visible>
+                </LastName>
+            </Name>
+        </Customer>
+        <TransactionBase>
+            <Reference1>
+                <Enabled>false</Enabled>
+                <Visible>false</Visible>
+            </Reference1>
+            <SubtotalAmount>
+                <Enabled>true</Enabled>
+                <Visible>true</Visible>
+            </SubtotalAmount>
+            <ShipToName>
+                <Enabled>false</Enabled>
+                <Visible>false</Visible>
+            </ShipToName>
+            <Customer>
+                <Name>
+                    <Enabled>false</Enabled>
+                    <Visible>false</Visible>
+                </Name>
+                <Address>
+                    <AddressLine1>
+                        <Enabled>false</Enabled>
+                        <Visible>false</Visible>
+                    </AddressLine1>
+                    <City>
+                        <Enabled>false</Enabled>
+                        <Visible>false</Visible>
+                    </City>
+                    <State>
+                        <Enabled>false</Enabled>
+                        <Visible>false</Visible>
+                    </State>
+                    <Country>
+                        <Enabled>false</Enabled>
+                        <Visible>false</Visible>
+                    </Country>
+                    <EmailAddress>
+                        <Enabled>false</Enabled>
+                        <Visible>false</Visible>
+                    </EmailAddress>
+                </Address>
+            </Customer>
+        </TransactionBase>
+    </SinglePayment>
+</UI>
+```
