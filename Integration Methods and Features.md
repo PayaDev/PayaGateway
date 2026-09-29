@@ -1,7 +1,7 @@
 # Integration Methods and Features
 
 ## PCI-DSS Scope
-Before you begin, please keep in mind PCI-DSS scope. If you are looking to reduce scope for PCI-DSS within your implementation, you'll want to select an integration method that directs your end users to a Paya/Nuvei hosted payment form. If you decide a custom payment form is better for your solution you'll be required to provide us with a copy of your PCI-DSS compliance certificate from an [Approved Scanning Vendor (ASV)](https://listings.pcisecuritystandards.org/assessors_and_solutions/approved_scanning_vendors). The compliance certificate must be at least an [SAQ D](https://www.pcisecuritystandards.org/documents/SAQ_D_v3_Merchant.pdf) or higher.
+Before you begin, please keep in mind PCI-DSS scope. If you are looking to reduce scope for PCI-DSS within your implementation, you'll want to select an integration method that directs your end users to a Nuvei Integrated Payments Group (NIPG) hosted payment form. If you decide a custom payment form is better for your solution you'll be required to provide us with a copy of your PCI-DSS compliance certificate from an [Approved Scanning Vendor (ASV)](https://listings.pcisecuritystandards.org/assessors_and_solutions/approved_scanning_vendors). The compliance certificate must be at least an [SAQ D](https://www.pcisecuritystandards.org/documents/SAQ_D_v3_Merchant.pdf) or higher.
 
 With this in mind you are able to use a hosted form to tokenize a payment method. Once that is complete you can utilize the generated token (GUID) along with the Direct API Endpoints to process a payment. By utilizing a tokenized payment method you are able to maintain a reduced level of scope for PCI-DSS.
 
