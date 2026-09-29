@@ -1,5 +1,5 @@
-# Paya Core Gateway
-Products from Paya's Core platform (Sage Exchange/Sage Payment Solutions). These products utilize APIs for the sageexchange.com and sagepayments.com domains.
+# Nuvei Integrated Payments Group (NIPG) Core (formerly Paya Core) Gateway
+Products from Nuvei's NIPG Core platform (Sage Exchange/Sage Payment Solutions). These products utilize APIs for the sageexchange.com and sagepayments.com domains.
 
 If you have any questions, please email us at sdksupport@nuvei.com.
 
@@ -7,7 +7,7 @@ If you have any questions, please email us at sdksupport@nuvei.com.
 The rest of this page takes you from registration to certification. If you'd like to know more about our API and hosted solutions, please check out [Integration Methods and Features](https://github.com/PayaDev/PayaGateway/blob/master/Integration%20Methods%20and%20Features.md).
 
 ### Create an account
-1. Register with the [Paya Core Developer Portal](https://developer.sagepayments.com)
+1. Register with the [Nuvei's NIPG Core Developer Portal](https://developer.sagepayments.com)
 2. Click **Create Account**.
 3. Enter your information and review the **Terms & Conditions**.
 4. Select the **Accept Terms & Conditions of Use** checkbox.
@@ -15,7 +15,7 @@ The rest of this page takes you from registration to certification. If you'd lik
 ![image](https://github.com/PayaDev/PayaGateway/assets/11508367/7bdcabec-9b4f-46af-add4-7072064c9ce0)
 
 5. Click **Create Account**.
-6. Check your inbox for a validation email. Follow the instructions in the email to sign in to the [Paya Core Developer Portal](https://developer.sagepayments.com).
+6. Check your inbox for a validation email. Follow the instructions in the email to sign in to the [Nuvei's NIPG Core Developer Portal](https://developer.sagepayments.com).
 
 ### Adding an application or product
 Adding an app on the developer portal will provide you with your sandbox API credentials (Application ID/Client ID and Client Secret).
@@ -28,7 +28,7 @@ Adding an app on the developer portal will provide you with your sandbox API cre
 
 5. Click **Create App**. Your sandbox API keys have been approved.
 6. Click your application name to expand the details.
-7. Use the API keys to integrate directly into the Paya APIs.
+7. Use the API keys to integrate directly into the NIPG Core APIs.
 
 ### Requesting Certification
 Follow the steps below to request certification for your app. This is the final step you will take when you are ready to move your application from sandbox to production.
