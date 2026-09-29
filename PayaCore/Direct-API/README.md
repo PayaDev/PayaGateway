@@ -1,6 +1,6 @@
-# Paya Core Direct-API
+# NIPG Core Direct-API
 
-The Paya Core Direct API provides a full suite of products and services. Developers looking to own their own UI/UX and PCI requirements would want to leverage this robust feature set. Complete with Healthcare, Level III, Retail, and Ecommerce processing, this API provides it all!
+The NIPG Core Direct API provides a full suite of products and services. Developers looking to own their own UI/UX and PCI requirements would want to leverage this robust feature set. Complete with Healthcare, Level III, Retail, and Ecommerce processing, this API provides it all!
 
 **NOTE: This integration method requires PCI validation through an [Approved Scanning Vendor (ASV)](https://listings.pcisecuritystandards.org/assessors_and_solutions/approved_scanning_vendors) to obtain your PCI compliance certificate. You'll need to provide an [SAQ D](https://www.pcisecuritystandards.org/documents/SAQ_D_v3_Merchant.pdf) at minimum in order to support a RESTful implementation with a custom form to obtain and submit PCI-sensitive data.**
 
