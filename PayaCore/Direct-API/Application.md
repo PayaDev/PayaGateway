@@ -1,6 +1,6 @@
 # Application
 
-The Application API can be used by ISOs and Partners to submit merchant applications directly to Sage Payment Solutions.
+The Application API can be used by ISOs and Partners to submit merchant applications directly to Nuvei Integrated Payments Group (NIPG).
 
 ## POST Applications_Post
 
