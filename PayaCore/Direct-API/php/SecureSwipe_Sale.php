@@ -12,14 +12,14 @@
     // your developer credentials
     // client_id may be referred to as "Consumer Key".
     // client_key may be referred to as "Consumer Secret".
-    $client_id = "W8yvKQ5XbvAn7dUDJeAnaWCEwA4yXEgd";
-    $client_key = "iLzODV5AUsCGWGkr";
+    $client_id = "[Client ID]";
+    $client_key = "[Client Secret]";
 	
 
     // you (or your client's) merchant credentials.
     // grab a test account from us for development!
-    $merchant_id = "173859436515";
-    $merchant_key = "P1J2V8P2Q3D8";
+    $merchant_id = "[Merchant ID]";
+    $merchant_key = "[Merchant Key]";
 	
 	  // a standard unix timestamp. a request must be received within 60s
     // of its timestamp header.
