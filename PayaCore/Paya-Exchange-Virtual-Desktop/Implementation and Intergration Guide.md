@@ -61,8 +61,8 @@ https://www.sageexchange.com/sevd/frmPayment.aspx
                     &lt;Payments&gt; 
                         &lt;PaymentType&gt; 
                             &lt;Merchant&gt; 
-                                &lt;MerchantID&gt;999999999997&lt;/MerchantID&gt; 
-                                &lt;MerchantKey&gt;K3QD6YWyhfD&lt;/MerchantKey&gt; 
+                                &lt;MerchantID&gt;[Merchant ID]&lt;/MerchantID&gt; 
+                                &lt;MerchantKey&gt;[Merchant Key]&lt;/MerchantKey&gt; 
                             &lt;/Merchant&gt; 
                             &lt;TransactionBase&gt; 
                                 &lt;TransactionID&gt;d71c8ea0-3d17-46ab-ac09-a5460cefdc9e&lt;/TransactionID&gt; 
@@ -178,8 +178,8 @@ https://www.sageexchange.com/sevd/frmPayment.aspx
     xmlReq = xmlReq & "  <Payments>"         
     xmlReq = xmlReq & "    <PaymentType>"         
     xmlReq = xmlReq & "      <Merchant>"         
-    xmlReq = xmlReq & "        <MerchantID>999999999997</MerchantID>"         
-    xmlReq = xmlReq & "        <MerchantKey>K3QD6YWyhfD</MerchantKey>"         
+    xmlReq = xmlReq & "        <MerchantID>[Merchant ID]</MerchantID>"         
+    xmlReq = xmlReq & "        <MerchantKey>[Merchant Key]</MerchantKey>"         
     xmlReq = xmlReq & "      </Merchant>"         
     xmlReq = xmlReq & "      <TransactionBase>" 
     xmlReq = xmlReq & "        <TransactionID>C1F011EA-56BC-49b4-8A33-85C32451D573</TransactionID>"         
@@ -354,8 +354,8 @@ In the event in which a PostBack is not recieved or cannot be implemented the XM
     xmlReq = xmlReq & "  </Application>"        
     xmlReq = xmlReq & "  <VaultStatusQuery>"        
     xmlReq = xmlReq & "    <Merchant>"        
-    xmlReq = xmlReq & "      <MerchantID>999999999997</MerchantID>"        
-    xmlReq = xmlReq & "      <MerchantKey>K3QD6YWyhfD</MerchantKey>"        
+    xmlReq = xmlReq & "      <MerchantID>[Merchant ID]</MerchantID>"        
+    xmlReq = xmlReq & "      <MerchantKey>[Merchant Key]</MerchantKey>"        
     xmlReq = xmlReq & "    </Merchant>" 
     xmlReq = xmlReq & "    <VaultID>MyID</VaultID>"        
     xmlReq = xmlReq & "  </VaultStatusQuery>"        
@@ -399,8 +399,8 @@ set msxml = nothing
     xmlReq = xmlReq & "<TransactionStatusQueries>"
     xmlReq = xmlReq & "<TransactionStatusQueryType>"
     xmlReq = xmlReq & "<Merchant>"
-    xmlReq = xmlReq & "<MerchantID>999999999997</MerchantID>"
-    xmlReq = xmlReq & "<MerchantKey>K3QD6YWyhfD</MerchantKey>"
+    xmlReq = xmlReq & "<MerchantID>[Merchant ID]</MerchantID>"
+    xmlReq = xmlReq & "<MerchantKey>[Merchant Key]</MerchantKey>"
     xmlReq = xmlReq & "</Merchant>"
     xmlReq = xmlReq & "<TransactionID>529ba335-d4bc-420f-887e-f1dc48d5b773</TransactionID>"
     xmlReq = xmlReq & "</TransactionStatusQueryType>"
