@@ -15,8 +15,8 @@ Contact: sdksupport@nuvei.com
 	// email us at sdksupport@nuvei.com, otherwise
 	// you are welcome to test with the credentials below.
     $merchantCredentials = [
-       "ID" => "173859436515",
-       "KEY" => "P1J2V8P2Q3D8"
+       "ID" => "[Merchant ID]",
+       "KEY" => "[Merchant Key]"
     ];
     
 	// Your application's credentials. In order to obtain
@@ -24,8 +24,8 @@ Contact: sdksupport@nuvei.com
 	// register with the developer portal at https://developer.sagepayments.com
 	// and setup an app under "My Apps".
     $developerCredentials = [
-       "ID" => "W8yvKQ5XbvAn7dUDJeAnaWCEwA4yXEgd",
-       "KEY" => "iLzODV5AUsCGWGkr"
+       "ID" => "[Client ID]",
+       "KEY" => "[Client Secret]"
     ];
 
 	
