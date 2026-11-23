@@ -35,15 +35,15 @@ requests_log.propagate = True
 # Merchant ID and Merchant Key for testing. If you would like your own test 
 # Merchant account with access to the Virtual Terminal, please request an account
 # from sdksupport@nuvei.com
-PAYA_MERCHANT_ID = '173859436515'
-PAYA_MERCHANT_KEY = 'P1J2V8P2Q3D8'
+PAYA_MERCHANT_ID = '[Merchant ID]'
+PAYA_MERCHANT_KEY = '[Merchant Key]'
 # These are the Developer/API Credentials, please feel free to use the prodvided
 # Client ID and Client Secret for initial testing. However, once you register 
 # with the developer portal at https://developer.sagepayments.com you will need
 # to setup an App under "My Apps", this will provide your unique Client ID and 
 # Client Secret.
-PAYA_CLIENT_ID = 'W8yvKQ5XbvAn7dUDJeAnaWCEwA4yXEgd'
-PAYA_CLIENT_SECRET = b"iLzODV5AUsCGWGkr"
+PAYA_CLIENT_ID = '[Client ID]'
+PAYA_CLIENT_SECRET = b"[Client Secret]"
 PAYA_API_ENDPOINT = 'https://api-cert.sagepayments.com/'
 
 
