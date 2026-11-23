@@ -2,8 +2,8 @@
 
     $sharedCredentials = [
         
-        "MID" => "417227771521",
-        "MKEY" => "I5T2R2K6V1Q3"
+        "MID" => "[Merchant ID]",
+        "MKEY" => "[Merchant Key]"
         
     ];
     
