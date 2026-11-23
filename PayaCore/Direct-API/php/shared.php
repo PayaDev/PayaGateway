@@ -14,15 +14,15 @@ Contact: sdksupport@nuvei.com
     // grab a test account from us for development!
     $merchantCredentials = [
         
-        "ID" => "417227771521",
-        "KEY" => "I5T2R2K6V1Q3"
+        "ID" => "[Merchant ID]",
+        "KEY" => "[Merchant Key]"
         
     ];
 
     // your application's credentials
     $developerCredentials = [
-        "ID" => "W8yvKQ5XbvAn7dUDJeAnaWCEwA4yXEgd",
-        "KEY" => "iLzODV5AUsCGWGkr"
+        "ID" => "[Client ID]",
+        "KEY" => "[Client Secret]"
     ];
     
     function getHmac($toBeHashed, $privateKey){
