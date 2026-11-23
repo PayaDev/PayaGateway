@@ -25,16 +25,16 @@ const (
 	// Merchant ID and Merchant Key for testing. If you would like your own test 
 	// Merchant account with access to the Virtual Terminal, please request an account
 	// from sdksupport@nuvei.com
-	PayaMerchantId  = "173859436515"
-	PayaMerchantKey = "P1J2V8P2Q3D8"
+	PayaMerchantId  = "[Merchant ID]"
+	PayaMerchantKey = "[Merchant Key]"
 
 	// These are the Developer/API Credentials, please feel free to use the prodvided
 	// Client ID and Client Secret for initial testing. However, once you register 
 	// with the developer portal at https://developer.sagepayments.com you will need
 	// to setup an App under "My Apps", this will provide your unique Client ID and 
 	// Client Secret.
-	PayaClientId     = "W8yvKQ5XbvAn7dUDJeAnaWCEwA4yXEgd"
-	PayaClientSecret = "iLzODV5AUsCGWGkr"
+	PayaClientId     = "[Client ID]"
+	PayaClientSecret = "[Client Secret]"
 
 	Verb = "POST"
 	Url  = "https://api-cert.sagepayments.com/bankcard/v1/charges?type=Sale"
