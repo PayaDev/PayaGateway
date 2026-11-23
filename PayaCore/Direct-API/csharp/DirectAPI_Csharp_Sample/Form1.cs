@@ -41,14 +41,14 @@ namespace DirectAPI_Csharp_Sample
             //Merchant Key. In order to get your own Client ID and Client Secret
             //you must register at https://developer.sagepayments.com and setup
             //an App under My Apps. Please let us know if you have any questions.
-            string merchantId = "173859436515";
-            string merchantKey = "P1J2V8P2Q3D8";
+            string merchantId = "[Merchant ID]";
+            string merchantKey = "[Merchant Key]";
 
             //TH - The Client ID and Client Key should be hard coded and not displayed
             //in the production product. These are your API credentials used for
             //security and tracking purposes.
-            string clientId = "W8yvKQ5XbvAn7dUDJeAnaWCEwA4yXEgd";
-            string clientSecret = "iLzODV5AUsCGWGkr";
+            string clientId = "[Client ID]";
+            string clientSecret = "[Client Secret]";
 
             //TH - Set the variables
             string url_sale = "https://api-cert.sagepayments.com/bankcard/v1/charges?type=Sale";
