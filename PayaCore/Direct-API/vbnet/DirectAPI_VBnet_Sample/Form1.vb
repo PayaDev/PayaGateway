@@ -180,13 +180,13 @@ Public Class Main
         'Merchant Key. In order to get your own Client ID and Client Secret
         'you must register at https://developer.sagepayments.com and setup
         'an App under My Apps. Please let us know if you have any questions.
-        Dim merchantId As String = "173859436515"
-        Dim merchantKey As String = "P1J2V8P2Q3D8"
+        Dim merchantId As String = "[Merchant ID]"
+        Dim merchantKey As String = "[Merchant Key]"
         'TH - The Client ID and Client Key should be hard coded and not displayed
         'in the production product. These are your API credentials used for
         'security and tracking purposes.
-        Dim clientId As String = "W8yvKQ5XbvAn7dUDJeAnaWCEwA4yXEgd"
-        Dim clientSecret As String = "iLzODV5AUsCGWGkr"
+        Dim clientId As String = "[Client ID]"
+        Dim clientSecret As String = "[Client Secret]"
 
         txtMerchantId.Text = merchantId
         txtMerchantKey.Text = merchantKey
