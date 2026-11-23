@@ -566,8 +566,8 @@ Sale is a transaction type in which the transaction is authorized and captured i
   <Payments> 
     <PaymentType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant> 
       <TransactionBase> 
         <TransactionID>5ea9747c-12a4-46af-970f-f8a92f6d4f65</TransactionID> 
@@ -640,8 +640,8 @@ Sale is a transaction type in which the transaction is authorized and captured i
   <Payments> 
     <PaymentType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant> 
       <TransactionBase> 
         <TransactionID>e856a127-8527-431c-807f-6efacd8bdf83</TransactionID> 
@@ -688,8 +688,8 @@ Sale is a transaction type in which the transaction is authorized and captured i
   <Payments> 
     <PaymentType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant> 
       <TransactionBase> 
         <TransactionID>e856a127-8527-431c-807f-6efacd8bdf83</TransactionID> 
@@ -770,8 +770,8 @@ Authorization is a transaction type in which an account is verified to be valid 
   <Payments> 
     <PaymentType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant> 
       <TransactionBase> 
         <TransactionID>5ea9747c-12a4-46af-970f-f8a92f6d4f65</TransactionID> 
@@ -843,8 +843,8 @@ Authorization is a transaction type in which an account is verified to be valid 
   <Payments> 
     <PaymentType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant> 
       <TransactionBase> 
         <TransactionID>e856a127-8527-431c-807f-6efacd8bdf83</TransactionID> 
@@ -895,8 +895,8 @@ Capture is a transaction type that puts an Authorization transaction into a Capt
   <Payments> 
     <PaymentType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant> 
       <TransactionBase> 
         <TransactionID>0405aa29-9be2-4c46-b8b0-b103e25a39b6</TransactionID> 
@@ -951,8 +951,8 @@ Capture is a transaction type that puts an Authorization transaction into a Capt
   <Payments> 
     <PaymentType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant> 
       <TransactionBase> 
         <TransactionID>0405aa29-9be2-4c46-b8b0-b103e25a39b6</TransactionID> 
@@ -981,8 +981,8 @@ Force is a transaction type used to force a transaction into settlement in cases
   <Payments> 
     <PaymentType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant> 
       <TransactionBase> 
         <TransactionID>5ea9747c-12a4-46af-970f-f8a92f6d4f65</TransactionID> 
@@ -1054,8 +1054,8 @@ Force is a transaction type used to force a transaction into settlement in cases
   <Payments> 
     <PaymentType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant> 
       <TransactionBase> 
         <TransactionID>e856a127-8527-431c-807f-6efacd8bdf83</TransactionID> 
@@ -1105,8 +1105,8 @@ Level2 data is additional transaction data required for Level II commercial card
   <Payments> 
     <PaymentType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant> 
       <TransactionBase> 
         <TransactionID>5ea9747c-12a4-46af-970f-f8a92f6d4f65</TransactionID> 
@@ -1245,8 +1245,8 @@ Void is a transaction type that cancels a transaction that has not yet been sett
   <Payments> 
     <PaymentType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant> 
       <TransactionBase> 
         <TransactionID>782ad8d0-0dd2-4763-8d64-cc9fddfad441</TransactionID> 
@@ -1272,8 +1272,8 @@ Credit is a transaction type that transfers funds to the account, rather than fr
   <Payments> 
     <PaymentType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant> 
       <TransactionBase> 
         <TransactionID>0405aa29-9be2-4c46-b8b0-b103e25a39b6</TransactionID> 
@@ -1297,8 +1297,8 @@ Credit is a transaction type that transfers funds to the account, rather than fr
   <Payments> 
     <PaymentType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant> 
       <TransactionBase> 
         <TransactionID>0405aa29-9be2-4c46-b8b0-b103e25a39b6</TransactionID> 
@@ -1324,8 +1324,8 @@ Batch Inquiry is used to obtain the transaction net and transaction count of the
   </Application> 
   <Batch> 
     <Merchant> 
-      <MerchantID>999999999997</MerchantID> 
-      <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+      <MerchantID>[Merchant ID]</MerchantID> 
+      <MerchantKey>[Merchant Key]</MerchantKey> 
     </Merchant> 
     <Net>-1</Net> 
     <Count>-1</Count> 
@@ -1347,8 +1347,8 @@ Batch Close is used to settle transactions in the current open batch awaiting se
   </Application> 
   <Batch> 
     <Merchant> 
-      <MerchantID>999999999997</MerchantID> 
-      <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+      <MerchantID>[Merchant ID]</MerchantID> 
+      <MerchantKey>[Merchant Key]</MerchantKey> 
     </Merchant> 
     <Net>2561.23</Net> 
     <Count>5</Count> 
@@ -1367,8 +1367,8 @@ Batch Close is used to settle transactions in the current open batch awaiting se
   </Application> 
   <Batch> 
     <Merchant> 
-      <MerchantID>999999999997</MerchantID> 
-      <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+      <MerchantID>[Merchant ID]</MerchantID> 
+      <MerchantKey>[Merchant Key]</MerchantKey> 
     </Merchant> 
     <Net>0</Net> 
     <Count>0</Count> 
@@ -1391,8 +1391,8 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   </Application> 
   <VaultOperation> 
     <Merchant> 
-      <MerchantID>999999999997</MerchantID> 
-      <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+      <MerchantID>[Merchant ID]</MerchantID> 
+      <MerchantKey>[Merchant Key]</MerchantKey> 
     </Merchant> 
     <VaultStorage> 
       <Service>CREATE</Service> 
@@ -1413,8 +1413,8 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   </Application> 
   <VaultOperation> 
     <Merchant> 
-      <MerchantID>999999999997</MerchantID> 
-      <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+      <MerchantID>[Merchant ID]</MerchantID> 
+      <MerchantKey>[Merchant Key]</MerchantKey> 
     </Merchant> 
     <VaultStorage> 
       <Service>UPDATE</Service> 
@@ -1435,8 +1435,8 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     </Application> 
     <VaultOperation> 
         <Merchant> 
-            <MerchantID>999999999997</MerchantID> 
-            <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+            <MerchantID>[Merchant ID]</MerchantID> 
+            <MerchantKey>[Merchant Key]</MerchantKey> 
         </Merchant> 
         <VaultStorage> 
             <Service>DELETE</Service> 
@@ -1457,8 +1457,8 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 </Application> 
 <VaultOperation> 
     <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
     </Merchant> 
     <VaultStorage> 
         <Service>RETRIEVE</Service> 
@@ -1479,8 +1479,8 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 </Application> 
 <VaultOperation> 
     <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
     </Merchant> 
     <VaultStorage> 
         <Service>UPDATE</Service> 
@@ -1509,8 +1509,8 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 </Application> 
 <VaultOperation> 
     <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
     </Merchant> 
     <VaultStorage> 
         <Service>UPDATE</Service> 
@@ -1579,8 +1579,8 @@ Account Query is used to get the status and services available for a particular 
     </Application> 
     <AccountQuery> 
         <Merchant> 
-            <MerchantID>999999999997</MerchantID> 
-            <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+            <MerchantID>[Merchant ID]</MerchantID> 
+            <MerchantKey>[Merchant Key]</MerchantKey> 
         </Merchant> 
     </AccountQuery> 
 </Request_v1> 
@@ -1599,7 +1599,7 @@ Transaction Status Query is used to get the status of a transaction processed th
   <TransactionStatusQueries> 
     <TransactionStatusQueryType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID>         <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID>         <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant>       <TransactionID>sdfasdf089273412903479a87sa</TransactionID> 
     </TransactionStatusQueryType> 
   </TransactionStatusQueries> 
@@ -1620,8 +1620,8 @@ Vault Status Query is used to get the status of a Vault operation processed thro
   </Application> 
   <VaultStatusQuery> 
     <Merchant> 
-      <MerchantID>999999999997</MerchantID> 
-      <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+      <MerchantID>[Merchant ID]</MerchantID> 
+      <MerchantKey>[Merchant Key]</MerchantKey> 
     </Merchant> 
     <VaultID>sdfasdf089273412903479a87sa</VaultID> 
   </VaultStatusQuery> 
@@ -1642,8 +1642,8 @@ The Paya Exchange application supports processing multiple payments in a single 
   <Payments> 
     <PaymentType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID>         
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID>         
+        <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant> 
       <TransactionBase> 
         <TransactionID>5ea9747c-12a4-46af-970f-f8a92f6d4f65</TransactionID> 
@@ -1669,8 +1669,8 @@ The Paya Exchange application supports processing multiple payments in a single 
     </PaymentType> 
     <PaymentType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant> 
       <TransactionBase> 
         <TransactionID>4fa9747c-13a2-46af-970f-f8a92f5d4f61</TransactionID> 
@@ -1714,8 +1714,8 @@ The Paya Exchange application supports splitting a single payment across multipl
   <Payments> 
     <PaymentType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant> 
       <TransactionBase> 
         <TransactionID>5ea9747c-12a4-46af-970f-f8a92f6d4f65</TransactionID> 
@@ -1785,8 +1785,8 @@ The PEVD supports control over UI elements such as background colors and key fie
   <Payments> 
     <PaymentType> 
       <Merchant> 
-        <MerchantID>999999999997</MerchantID> 
-        <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+        <MerchantID>[Merchant ID]</MerchantID> 
+        <MerchantKey>[Merchant Key]</MerchantKey> 
       </Merchant> 
       <TransactionBase> 
         <TransactionID>5ea9747c-12a4-46af-970f-f8a92f6d4f65</TransactionID> 
@@ -1898,8 +1898,8 @@ The PEVD supports control over UI elements such as background colors and key fie
   </Application> 
   <VaultOperation> 
     <Merchant> 
-      <MerchantID>999999999997</MerchantID> 
-      <MerchantKey>K3QD6YWyhfD</MerchantKey> 
+      <MerchantID>[Merchant ID]</MerchantID> 
+      <MerchantKey>[Merchant Key]</MerchantKey> 
     </Merchant> 
     <VaultStorage> 
       <Service>UPDATE</Service> 
